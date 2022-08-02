@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 1000px;
+    height: 100%;
+    background: white;
+
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.26);
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    background-image: url(cosmic1200v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#foto {
+    display: block;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+
+    background-image: url(perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    bottom: 80px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+    position: relative;
+    bottom: 60px;   
+}
+
+main h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.171);
+    margin-bottom: 5px;
+}
+
+.p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 320px;
+    height: 40px;
+    font-family: 'Inconsolata', Helvetica, sans-serif;
+    text-shadow: 0px 0px 2px black;
+
+
+    background-image: linear-gradient(to right, #26010F, #732248);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.247);
+}
+
+.botao:hover {
+    background-image: linear-gradient(to right, #732248, #26010F);
+}
+
+li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+
+    position: relative;
+    bottom: 50px;
+}
+
+footer h2 {
+    font-family: 'Inconsolata', Helvetica, sans-serif;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.171);
+    margin-bottom: 20px;
+}
+
+footer #box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 320px;
+    height: 70px;
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 20px;
+}
+
+footer #box > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+footer #credits {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 10px;
+    opacity: 80%;
+    margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+    section {
+        box-shadow: none;
+    }
+
+    body {
+        background: white;
+    }
+}
